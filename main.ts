@@ -1,5 +1,4 @@
 radio.onReceivedNumber(function (receivedNumber) {
-    basic.showString("" + (receivedNumber))
     if (receivedNumber == 10) {
         showThatCarIsDark()
     }
@@ -21,7 +20,7 @@ input.onGesture(Gesture.TiltLeft, function () {
     turnLeft()
 })
 function showThatCarIsDark () {
-    basic.showString("It is scary it is dark!")
+    basic.showIcon(IconNames.Pitchfork)
 }
 function turnRight () {
     sendSignal(2)
